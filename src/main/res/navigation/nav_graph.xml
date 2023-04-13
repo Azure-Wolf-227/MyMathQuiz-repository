@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/selectLevel" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLevel"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.SelectLevel"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/select_level">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/easyQuiz"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/easyQuiz" />
+        <action
+            android:id="@+id/action_SecondFragment_to_FourthFragment"
+            app:destination="@id/intermediateQuiz"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_SecondFragment_to_FifthFragment"
+            app:destination="@id/advancedQuiz"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/easyQuiz"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.EasyQuiz"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/fragment_easy" >
+        <action
+            android:id="@+id/action_EasyQuiz_to_EasyScore"
+            app:destination="@id/easyScore"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/intermediateQuiz"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.IntermediateQuiz"
+        android:label="@string/fourth_fragment_label"
+        tools:layout="@layout/fragment_intermediate" >
+        <action
+            android:id="@+id/action_InterQuiz_to_InterScore"
+            app:destination="@id/intermediateScore"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/advancedQuiz"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.AdvancedQuiz"
+        android:label="@string/fifth_fragment_label"
+        tools:layout="@layout/fragment_advanced" >
+        <action
+            android:id="@+id/action_AdvancedQuiz_to_Advanced_Score"
+            app:destination="@id/advancedScore"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/easyScore"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.EasyScore"
+        android:label="@string/score_board">
+        <action
+            android:id="@+id/action_EasyScore_to_SecondFragment"
+            app:destination="@id/selectLevel"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/intermediateScore"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.IntermediateScore"
+        android:label="intermediate_score"
+        tools:layout="@layout/intermediate_score" >
+        <action
+            android:id="@+id/action_InterScore_to_SecondFragment"
+            app:destination="@id/selectLevel"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/advancedScore"
+        android:name="com.fanny.freyre.mymathquiz_fannyfreyre.AdvancedScore"
+        android:label="advanced_score"
+        tools:layout="@layout/advanced_score" >
+        <action
+            android:id="@+id/action_AdvancedScore_to_SecondFragment"
+            app:destination="@id/selectLevel"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+</navigation>

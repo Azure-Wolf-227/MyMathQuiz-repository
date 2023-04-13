@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Quiz de Matemáticas - Fanny Freyre</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="first_fragment_label">Mi Quiz de Matemáticas</string>
+    <string name="second_fragment_label">Seleccione Dificultad</string>
+    <string name="third_fragment_label">Fácil</string>
+    <string name="fourth_fragment_label">Intermedio</string>
+    <string name="fifth_fragment_label">Avanzado</string>
+    <string name="score_board">Marcador</string>
+    <string name="math_quiz_name">Mi Quiz de Matemáticas</string>
+    <string name="play">Jugar</string>
+    <string name="hint_name">Introduzca su nombre de usuario</string>
+    <string name="last_user">Último Usuario: %1$s</string>
+    <string name="current_user">Usuario Actual</string>
+    <string name="select_difficulty">Seleccione Dificultad</string>
+    <string name="lvl_easy">Fácil</string>
+    <string name="lvl_intermediate">Intermedio</string>
+    <string name="lvl_advanced">Avanzado</string>
+    <string name="score_easy">Puntaje - Fácil</string>
+    <string name="score_intermediate">Puntaje - Intermedio</string>
+    <string name="score_advanced">Puntaje - Avanzado</string>
+    <string name="question_number">Preguntas: %1$d / %2$d</string>
+    <string name="correct_answer">¡CORRECTO!</string>
+    <string name="incorrect_answer">¡INCORRECTO!</string>
+    <string name="score">Puntaje: %1$d</string>
+    <string name="default_score">Puntaje: 0</string>
+    <string name="timer">1:00</string>
+    <string name="submit">Enviar</string>
+    <string name="next">Siguiente</string>
+    <string name="finish">Terminar</string>
+    <string name="last_score">ÚLTIMO PUNTAJE: %1$d</string>
+    <string name="top_five_scores">CINCO MEJORES PUNTAJES</string>
+    <string name="best_1">MEJOR1: %1$d - %2$s</string>
+    <string name="best_2">MEJOR2: %1$d - %2$s</string>
+    <string name="best_3">MEJOR3: %1$d - %2$s</string>
+    <string name="best_4">MEJOR4: %1$d - %2$s</string>
+    <string name="best_5">MEJOR5: %1$d - %2$s</string>
+    <string name="new_game">Juego Nuevo</string>
+</resources>
